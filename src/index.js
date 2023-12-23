@@ -6,7 +6,7 @@ const cors = require('cors');
 dotenv.config();
 
 const authRoutes = require('./Routes/authRoutes');
-//const jobRoutes = require('./Routes/job');
+const jobRoute = require('./Routes/jobRoutes');
 
 const app = express();
 
@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use('/api/auth', authRoutes);
+app.use('/api/job', jobRoute);
 
-//app.use('/api/job', jobRoutes);
 app.get('/health', (req, res) => {
     res.json({
         serverName: 'Job List Server',
@@ -31,11 +31,16 @@ app.use("/", async (req, res) => {
     res.status(200).json("Server is up and Running")
 });
 
-app.use((req, res, next) => {
-    res.status(404).json({ message: 'Route not found' });
-});
+// Error handler middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ error: 'Internal Server Error' });
+})
 
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 3000;
+
+
+app.listen(PORT, () => {
     mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
       .then(() =>  console.log(`Server running on http://localhost:${process.env.PORT}`))
       .catch((error) => console.log(error))
