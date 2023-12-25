@@ -6,7 +6,6 @@ const User = require('../Models/users');
 
 require('dotenv').config();
 
-
 // Error Handler middleware
 const errorHandler = (res, error) => {
     console.error(error);
@@ -37,7 +36,7 @@ router.post('/register', async (req, res) => {
         //create new user
         const user = new User({ name, email, mobile, password: hashedPassword });
         await user.save();
-        const token = jwt.sign({ user: user.email }, process.env.JWT_SECRET_KEY);
+        const token = jwt.sign({ user: user.email }, process.env.JWT_SECRET);
         
         
         res.json({
@@ -61,7 +60,6 @@ router.post('/login', async (req, res) => {
         if(!email || !password) {
             return res.status(400).json({ error: 'Email and Password are required' });
         }
-
 
         //find user
         const user = await User.findOne({ email });
