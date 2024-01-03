@@ -6,18 +6,18 @@ const router = express.Router();
 
 
 //Create a job post API
-router.post('/job-posts', requireAuth,async (req, res) => {
+router.post('/job-posts', requireAuth, async (req, res) => {
     const {
         companyName,
         logoURL, position, salary, jobtype,
         remote, location, description,
-        about, skills, createdAt
+        about, skillsRequired
     } = req.body;
     const recruiterName = req.body.name;
 
-    let skillsArray = skills;
-    if(typeof skills === 'string') {
-        skillsArray = skills.split(',').map(skill => skill.trim());
+    let skillsArray = skillsRequired;
+    if(typeof skillsRequired === 'string') {
+        skillsArray = skillsRequired.split(',').map(skill => skill.trim());
     }
 
     try {

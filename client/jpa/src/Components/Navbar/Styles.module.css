@@ -1,0 +1,79 @@
+.nav{   
+    background: #ED5353;
+    border-radius: 0px 0px 62px 55px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    height: 14vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.shape1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 8vh;
+    width: auto;
+    z-index: -5;
+}
+.shape2 {
+    position: absolute;
+    left: 33%;
+    top: 0;
+    height: 10vh;
+    width: 30vw;
+}
+.shape3 {
+    position: absolute;
+    right: 3%;
+    top: 0;
+    height: 14vh;
+    width: 25vw;
+    z-index: -5;
+}
+
+.text{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 144.02%;
+    font-family: var(--font-dm-sans);
+    color: white;
+    margin-left: 10vh;
+}
+
+.login{
+    position: relative;
+    right: 4rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 5.9rem;
+}
+
+.register{
+    position: relative;
+    color: #ED5353;
+    font-size: 0.98rem;
+    background-color: white;
+    right: 3rem;
+    padding: 0.5rem 0.5rem;
+    width: 5.8rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+}
+
+.loggedInText{
+    color: white;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}

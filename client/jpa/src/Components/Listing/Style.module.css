@@ -1,0 +1,223 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100wv;
+    box-sizing: border-box;
+}
+.container{
+    width: 70vw;
+    position: relative;
+    top: 16.7vh;
+    left: 15vw;
+    height: 20vh;
+    margin-right: auto;
+    padding: 1rem 8rem;
+    background-color: white;
+    box-shadow: 0px 4px 23px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.inputcontainer {
+    position: relative;
+}
+
+.inputcontainer img {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: auto;
+}
+
+.inputcontainer input {
+    width: 100%;
+    padding: 7.5px;
+    height: 44px;
+    font-size: 18px;
+    padding-left: 4vw; /* Adjust left padding to accommodate the SVG image */
+    border-radius: 9px;
+    line-height: 144.02%;
+    font-weight: 500;
+    font-family: var(--font-dm-sans);
+    color: #9c9c9c;
+    background-color: #fff;
+    border: 1.8px solid #e3e3e3;
+    box-sizing: border-box;
+}
+
+.viewJ{
+    position: absolute;
+    width: 18vh;
+    right: 8rem;
+    background: #ED5353;
+    border-radius: 6.50784px;
+    padding: 0.8em 1.7em;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.containerBottom{
+    display: flex;
+    margin-top: 18px;
+}
+
+.inputSelect {
+    width: 160px; 
+    padding: 8px; 
+    font-size: 15.5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white; 
+}
+
+.chip{
+    box-sizing: border-box;
+    background: #FFEEEE;
+    color: black;
+    padding: 0.55rem;
+    border-radius: 4px;
+    border: 2.8px solid red;
+    margin-left: 20px;
+}
+
+.cross{
+    background-color: #ED5353;
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+    margin-left: 8px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.clear {font-size: 18px;
+    line-height: 144.02%;
+    font-weight: 500;
+    font-family: var(--font-dm-sans);
+    color: #ed5353;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list{
+    width: 80vw;
+    margin: 2.8vh 10vw; 
+    background-color: white;
+    box-shadow: 0px 4px 23px 2px rgba(0, 0, 0, 0.1);
+    /* padding: 2rem 1rem; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 16px 25px 0px 30px;
+    height: 48px;
+    width: 48px;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.listLeft{
+    display: flex;
+}
+
+.infoLeft{
+    margin: 0.7rem;
+}
+
+.position{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-dm-sans);
+    margin-bottom: 1rem;
+    line-height: 89.19%;
+    text-align: left;
+}
+
+.extraInfo{
+    display: flex;
+    gap: 40px;
+    margin-top: 0.8rem;
+}
+
+.greyText img,
+.greyText2 img {
+    filter: grayscale(100%); /* Adjust as needed */
+    height: 100%;
+    width: 100%;
+}
+
+.greyText2,
+.greyText {
+    height: 18px;
+    width: 50px;
+    display: flex;
+    align-items: center; /* Align text and image vertically in the middle */
+}
+.greyText3 {
+    display: flex;
+    align-items: center;
+    height: 16px;
+    width: 50px;
+}
+
+.greyText2 img,
+.greyText img, .greyText3 img {
+    margin-right: 5px; /* Adjust the margin as needed for spacing between the icon and text */
+}
+
+.redText{
+    color: #ED5353;
+}
+
+.skill{
+    background-color: #FFEEEE;
+    color: black;
+    padding: 0.4rem;
+    border-radius: 6px;
+    margin-right: 1rem;
+}
+
+.btnGroup{
+    display: flex;
+    margin-top: 1.4rem;
+    gap: 18px;
+    margin-right: 30px;
+    justify-content: space-evenly;
+}
+
+.edit{
+    background-color: transparent;
+    border: 1px solid #ED5353;
+    border-radius: 6px;
+    padding: 0.4em 1.8em;
+    color: #ED5353;
+    font-weight: 600;
+    width: 149px;
+    height: 35px;
+    box-sizing: border-box;
+}
+.view {
+    border-radius: 3px;
+    background-color: #ed5353;
+    width: 149px;
+    height: 35px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 500;
+}
+.bottom{
+    position: relative;
+    top: 20vh;
+}
