@@ -1,0 +1,77 @@
+.container{
+    box-sizing: border-box;
+    width: 55vw;
+    height: 100vh;
+    padding: 1vh 4.9vw;
+    position: relative;
+}
+.h1{
+    font-size: 2.5rem;
+    line-height: 144.02%;
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    margin: 3vh 0vw;
+}
+.jobForm{
+  margin-bottom: 7vh;  
+}
+
+.formGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:  2.1vh 0vw;
+}
+.formGroup label {
+    font-size: 23px;
+    font-family: var(--font-dm-sans);
+    font-weight: 500;
+}
+
+.formGroup input{
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    height: 35px;
+    font-size: 16.9px;
+    border: 2px solid #C2C2C2;
+    box-sizing: border-box;
+}
+
+
+
+.formGroup select {
+    width: 148px; 
+    padding: 3px; 
+    font-size: 17px;
+    color: rgb(133, 131, 131); 
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    background-color: white;
+}
+.formGroup textarea {
+    font-size: 18px;
+    border-radius: 5px;
+    width: 60%;
+    height: auto;
+    padding: 8px;
+    resize: none;
+    box-sizing: border-box;
+}
+.cancel{
+    background: #FFFFFF;
+    border: 0.848485px solid #CECECE;
+    border-radius: 6.50784px;
+    padding: 1em 2em;
+    margin-left: 15vw;
+    margin-right: 1vw;
+}
+
+.add{
+    background: #ED5353;
+    border-radius: 6.50784px;
+    padding: 1em 2em;
+    border: none;
+    color: white;
+    font-weight: 600;
+}

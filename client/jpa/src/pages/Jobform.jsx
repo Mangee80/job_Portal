@@ -4,7 +4,7 @@ import JobImage from '../assets/job.png'
 export const AddJob = ()=>{
     return(
         <div style={{display:"flex"}}>
-            {/* <JobForm/> */}
+            <JobForm/>
             <img style={{maxHeight:"100vh", width:"48vw"}}  src={JobImage}/>
         </div>    
         )
