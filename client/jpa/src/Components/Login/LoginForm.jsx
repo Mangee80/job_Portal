@@ -11,7 +11,7 @@ export const LoginForm = () => {
       e.preventDefault();
       if (data.email && data.password) {
         try {
-          const response = await fetch("http://localhost:5000/api/auth/login", {
+          const response = await fetch("https://job-portal-three-mu.vercel.app/api/auth/login", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
