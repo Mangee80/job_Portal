@@ -22,7 +22,7 @@ export const Listing = ()=>{
         }
         else{
             const options = {method: 'GET'};
-        fetch(`http://localhost:5000/api/job/job-posts?skillsRequired=`, options)
+        fetch(`http://job-portal-puce.vercel.app/api/job/job-posts?skillsRequired=`, options)
         .then(response => response.json())
         .then(response => setJobs([...response.jobPosts]))
         .catch(err => console.error(err));
