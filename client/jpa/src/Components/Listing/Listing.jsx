@@ -22,7 +22,7 @@ export const Listing = ()=>{
         }
         else{
             const options = {method: 'GET'};
-        fetch(`http://job-portal-puce.vercel.app/api/job/job-posts?skillsRequired=`, options)
+        fetch(`https://job-portal-three-mu.vercel.app//api/job/job-posts?skillsRequired=`, options)
         .then(response => response.json())
         .then(response => setJobs([...response.jobPosts]))
         .catch(err => console.error(err));
@@ -46,7 +46,7 @@ export const Listing = ()=>{
     useEffect(()=>{
         const options = {method: 'GET'};
         const search = skills.join("&")
-        fetch(`http://job-portal-puce.vercel.app/api/job/job-posts?skillsRequired=${search}`, options)
+        fetch(`https://job-portal-three-mu.vercel.app//api/job/job-posts?skillsRequired=${search}`, options)
         .then(response => response.json())
         .then(response => setJobs([...response.jobPosts]))
         .catch(err => console.error(err));
