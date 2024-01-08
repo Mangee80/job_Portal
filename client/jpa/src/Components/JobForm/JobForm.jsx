@@ -98,9 +98,9 @@ export const JobForm=()=> {
 
 
 
-    const handleEdit = async(event)=>{
-        event.preventDefault();
-      if (
+const handleEdit = async(event)=>{
+    event.preventDefault();
+  if (
     !formData.companyName ||
     !formData.logoURL ||
     !formData.position ||
@@ -206,8 +206,8 @@ export const JobForm=()=> {
       </div>
 
       <div className={styles.formGroup}>
-        <label className={styles.label} htmlFor="skills">Skills:</label>
-        <input className={styles.input} type="text" name="skills" value={formData.skillsRequired} onChange={handleChange} placeholder='skills'/>
+        <label className={styles.label} htmlFor="skillsRequired">Skills:</label>
+        <input className={styles.input} type="text" name="skillsRequired" value={formData.skillsRequired} onChange={handleChange} placeholder='skills'/>
       </div>
     
     </div>
